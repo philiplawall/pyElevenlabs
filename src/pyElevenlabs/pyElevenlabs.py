@@ -3,7 +3,7 @@ import requests
 SpeechUrlTemplate = "https://api.elevenlabs.io/v1/text-to-speech/{}"
 
 
-class pyElevenlabs(object):
+class pyElevenlabsClient(object):
     def __init__(self, apiKey):
         self._apiKey = apiKey
         self._headers = {"xi-api-key": self._apiKey}
